@@ -1,6 +1,8 @@
 import urllib.request
 from time import perf_counter
 
+# Yet another example on read-only computed properties
+
 
 class WebPage:
     def __init__(self, url: str):
