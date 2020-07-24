@@ -63,11 +63,11 @@ class Circle:
 # Creating a circle instance
 c = Circle(2)
 print(f"Radius of 'c': {c.radius}")
-print(f"Area of 'c': {c.area}")
+print(f"Area of 'c': {c.area}")  # Calculates area and caches it
 print(f"Area of 'c': {c.area}")
 print(f"Area of 'c': {c.area}")
 c.radius = 3
-print(f"Area of 'c': {c.area}")
+print(f"Area of 'c': {c.area}")  # Calculates are and caches it
 print(f"Area of 'c': {c.area}")
 print(f"Area of 'c': {c.area}")
 print(f"\n")
