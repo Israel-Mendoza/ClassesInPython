@@ -3,7 +3,8 @@
 
 class Person:
     def __init__(self, name: str):
-        self._name = name  # Non-public attribute
+        print("Initializating object...")
+        self.set_name(name)
 
     def get_name(self) -> str:  # Getter
         return self._name
