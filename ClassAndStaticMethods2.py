@@ -8,7 +8,7 @@ class Timer:
 
     def __init__(self):
         self._time_start = None
-        self._time_start = None
+        self._time_end = None
 
     @classmethod
     def set_tz(cls, offset, name):
