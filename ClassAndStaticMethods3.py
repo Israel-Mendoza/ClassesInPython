@@ -72,6 +72,13 @@ class Employee:
 
     @classmethod
     def from_string(cls, emp_str: str, separator: str):
+        """
+        Alternative constructor.
+        args:
+            emp_str [str]: A string containing the employee info
+            separator [str]: The string separating the employee info
+        returns: An employee object
+        """
         first, last, age, salary = emp_str.split(separator)
         return cls(first, last, age, salary)
 
@@ -115,6 +122,7 @@ emp_strings = [e1, e2, e3]
 emp_objects = []
 
 for employee in emp_strings:
+    # Appending employee objects after creating them with the alternative constructor
     emp_objects.append(Employee.from_string(employee, "--"))
 
 for employee in emp_objects:
